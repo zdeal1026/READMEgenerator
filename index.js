@@ -48,17 +48,20 @@ const questions = [
         type: 'input',
         name: 'email',
         message: 'enter email',
+        default: 'jedimastershake@gmail.com',
     },
     {
         type: 'input',
         name: 'github',
         message: 'enter github repo',
+        default: 'https://github.com/zdeal1026/READMEgenerator',
     },
     {
         type: 'input',
         name: 'links',
         message: 'additional links',
-    }
+    },
+    
 
 ];
 
@@ -71,7 +74,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {
-      console.log('applying qustions to README.md..');
+      console.log('applying questions to README.md..');
       //message in command line to show readme is being generated
       writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
       //calling writeToFile function where README.md is destination file and logs info using generateMarkdown file

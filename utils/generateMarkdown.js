@@ -81,7 +81,9 @@ ${data.test}
 For any questions please use the contact information below
 
 ## Contact
- email ${data.email},  github repo ${data.github}](https://github.com/${data.github}/).
+
+ email ${data.email}, 
+ github repo ${data.github}
 
 ## Links
 
