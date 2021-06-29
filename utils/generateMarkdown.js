@@ -54,8 +54,6 @@ ${data.description}
 
 ## Installation
 
-To add node modules run 
-
 ${data.installation}
 
 ## Usage
